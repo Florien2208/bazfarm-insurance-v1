@@ -1,6 +1,7 @@
 import Layout from "./layout/Layout";
 import Home from "./components/Home";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Insurance from "./components/Insurance";
 
 export default function App() {
   const router = createBrowserRouter([
@@ -11,6 +12,10 @@ export default function App() {
         {
           path: "",
           element: <Home />,
+        },
+        {
+          path: "insurance",
+          element: <Insurance />,
         },
       ],
     },
